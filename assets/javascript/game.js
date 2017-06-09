@@ -39,8 +39,10 @@ function getRandomIntInclusive(min, max) {
 // This function resets the score and Magic Numbers after the player wins or losses
 
   function reset (){
-    var magic = getRandomIntInclusive();
+    magic = getRandomIntInclusive();
+    var $magicNumber = $("#magicNumber").text(magic);
     score = 0;
+    var $totalScore = $("#totalScore").text(score);
     alert("Time for a new Game!");
   }
 
@@ -53,12 +55,14 @@ function getRandomIntInclusive(min, max) {
         $wins++;
         $("#wins").text($wins);
         alert("You've Won the Recess Game!");
+        reset ();
       }
 
       else if (score >= magic) {
         $losses++;
         $("#losses").text($losses);
         alert("You lose!!");
+        reset ();
       }
       });
 
@@ -70,12 +74,14 @@ function getRandomIntInclusive(min, max) {
           $wins++;
           $("#wins").text($wins);
           alert("You've Won the Recess Game!");
+          reset ();
         }
 
         else if (score >= magic) {
           $losses++;
           $("#losses").text($losses);
           alert("You lose!!");
+          reset ();
         }
       });
 
@@ -87,12 +93,14 @@ function getRandomIntInclusive(min, max) {
         $wins++;
         $("#wins").text($wins);
         alert("You've Won the Recess Game!");
+        reset ();
       }
 
       else if (score >= magic) {
         $losses++;
         $("#losses").text($losses);
         alert("You lose!!");
+        reset ();
 
       }
       });
@@ -105,6 +113,7 @@ function getRandomIntInclusive(min, max) {
         $wins++;
         $("#wins").text($wins);
         alert("You've Won the Recess Game!");
+        reset ();
       }
 
       else if (score >= magic) {
