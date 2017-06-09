@@ -2,18 +2,56 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title> Crystal Game </title>
+    <title> Recess Game </title>
     <link rel="stylesheet" href="assets/css/reset.css">
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel=" stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
-    <script src="https://code.jquery.com/jquery.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
   </head>
-    <body>
+    <body class = "container">
+      <div class="container, jumbotron">
+        <h1>Welcome to The Recess Game!</h1>
+      </div>
 
+      <div class = "row">
+        <div class = "directions, row, col-md-6">
+          <h4>directions go here</h4>
+        </div>
+      </div>
 
+      <div class = "row col-md-12">
+        <div class = "crystals">
+          <span id="crystalOne" class = "col-md-1, img"><img src="assets/images/img1.png" class="img-rounded" ></span>
+          <span id="crystalTwo" class = "col-md-1, img"><img src="assets/images/img2.png" class="img-rounded" ></span>
+          <span id="crystalThree" class = "col-md-1, img"><img src="assets/images/img3.png" class="img-rounded" ></span>
+          <span id="crystalFour" class = "col-md-1, img"><img src="assets/images/img4.gif" class="img-rounded" ></span>
+        </div>
+      </div>
 
+      <div class ="row">
+        <div class = "col-md-4">
+          <h3>The Magic Number is:  <span id = "magicNumber" ></span><h3>
+        </div>
 
-    <script src="assets/javascript/game.js"></script>
+        <div class = "winsLosses, col-md-4">
+            <h3 id ="wins">
+            Wins:
+          </h3>
+          <br>
+            <h3 id="losses">
+              Losses:
+            </h3>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-md-4"> <h3>Your total score is:  <span id = "totalScore"></span></h3>
+        </div>
+      </div>
+
+      <script src="https://code.jquery.com/jquery.js"></script>
+      <script src="assets/javascript/game.js"></script>
     </body>
 
 </html>

@@ -1,0 +1,16 @@
+
+
+h1 {
+  text-align: center;
+  margin: 0;
+}
+
+body {
+  background-image: url("../images/congruent_pentagon.png");
+}
+
+.img-rounded {
+  display: inline-block;
+  height: 200px;
+  margin: 20px;
+}
